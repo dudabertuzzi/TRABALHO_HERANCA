@@ -1,0 +1,16 @@
+Análise do Jogo "Fireboy and Watergirl 5: Elements"
+
+1. Descrição do Jogo:
+   Fireboy and Watergirl é um jogo de plataforma cooperativo onde dois personagens, Fireboy e Watergirl, devem trabalhar juntos para superar obstáculos e puzzles em diferentes níveis. Cada personagem tem habilidades únicas - Fireboy pode atravessar lava sem se machucar, enquanto Watergirl pode atravessar a água sem problemas. Eles devem coletar gemas e alcançar a saída de cada nível, evitando elementos perigosos que são prejudiciais ao outro personagem.
+
+2. Análise das Entidades:
+   - Personagens: Ambos os personagens compartilham a mesma estrutura básica de movimento.
+   - Elementos do Ambiente: O ambiente do jogo contém elementos como ventiladores, botões, gemas, alavancas, espelhos/refletores, regulador, caixas, bolas, gangora, portais e portas que afetam os personagens de maneiras diferentes.
+   - Obstáculos: Elementos perigosos como: lava, gelo, lagoa, plataqformas e poças de ácido, que representam ameaças aos personagens.
+   - Vida: Uma única vida compartilhada entre eles.
+   - Nivéis: São 32 niveis, que são avaliados o tempo e a quantidade de gemas adquiridos, dependendo disso pode ser avaliados em medalha cinza(nenhuma pontuação), roxo(1 pontuação), laranja(2 pontuação)  e verde(3 pontuação). 
+
+3. Identificação de Hierarquia e Herança:
+   - Personagens: Eles podem ser representados como subclasses de uma classe abstrata "Personagem", onde cada um terá métodos e atributos específicos.
+   - Elementos do Ambiente e Objetos Interativos: Pode haver uma hierarquia de classes para representar diferentes elementos do ambiente, como "Elemento". Além disso, itens como gemas e botões representados por subclasses de uma classe "Item".
+   - Elementos Perigoso: Agrupados sob uma classe abstrata "Perigo".
