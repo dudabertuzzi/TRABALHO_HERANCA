@@ -1,5 +1,4 @@
 abstract class Entidade {
-
 }
 
 abstract class Personagem extends Entidade {
@@ -22,7 +21,6 @@ class Fireboy extends Personagem {
     }
 }
 
-
 class Watergirl extends Personagem {
     public Watergirl(int vida) {
         super(vida);
@@ -30,34 +28,23 @@ class Watergirl extends Personagem {
 
     @Override
     public void mover() {
-
     }
 }
 
 abstract class Elemento extends Entidade {
-
 }
-
 
 class Item extends Elemento {
-
 }
-
 
 abstract class Perigo extends Elemento {
-
 }
-
 
 class Lava extends Perigo {
-
 }
-
 
 class Gelo extends Perigo {
-    
 }
-
 
 class Nivel {
     private int numero;
@@ -71,24 +58,20 @@ class Nivel {
         this.gemasColetadas = gemasColetadas;
         this.medalha = medalha;
     }
-
 }
 
-
 enum Medalha {
-    CINZA, 
-    ROXA,  
+    CINZA,
+    ROXA,
     LARANJA,
-    VERDE 
+    VERDE
 }
 
 public class Main {
     public static void main(String[] args) {
-     
-        Fireboy fireboy = new Fireboy(3); 
-        Watergirl watergirl = new Watergirl(3); 
-        
-        Nivel nivel1 = new Nivel(1, 100, 10, Medalha.VERDE); 
-        
-    }
+        Fireboy fireboy = new Fireboy(3);
+        Watergirl watergirl = new Watergirl(3);
+
+        Nivel nivel1 = new Nivel(1, 100, 10, Medalha.VERDE);
+    }
 }
